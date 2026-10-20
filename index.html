@@ -1,1 +1,144 @@
 
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Why Are My Bills Going Up</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--bg1:#0F5B73;--bg2:#082F3F;--card:#fff;--ink:#0B3A4A;--mut:#5A7480;--line:#d3e4ea;--acc:#FFA62B;--accInk:#082F3F;--field:#f3f9fb;--soft:#CFE6EE;--teal:#1C7C96}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--card:#0d3442;--ink:#e8f4f8;--mut:#a9ccd8;--line:#1f5a70;--field:#08222c}}
+:root[data-theme="dark"]{--card:#0d3442;--ink:#e8f4f8;--mut:#a9ccd8;--line:#1f5a70;--field:#08222c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;background:linear-gradient(170deg,var(--bg1),var(--bg2));background-color:#0B3A4A;color:#fff;min-height:100vh;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:640px;margin:0 auto;padding:28px 18px 44px}
+.tag{display:inline-block;background:var(--acc);color:var(--accInk);font-weight:700;font-size:13px;padding:5px 13px;border-radius:30px}
+h1{font-size:clamp(32px,9vw,50px);line-height:1.04;font-weight:800;letter-spacing:-1px;margin:18px 0 12px}
+.lead{font-size:17px;line-height:1.5;color:var(--soft)}
+.asof{font-size:12.5px;color:var(--soft);opacity:.85;margin-top:10px}
+.reasons{margin-top:24px;display:grid;gap:14px}
+.rc{background:var(--card);color:var(--ink);border-radius:20px;padding:18px 18px 16px;display:grid;grid-template-columns:44px 1fr;gap:14px}
+.num{width:44px;height:44px;border-radius:14px;background:var(--acc);color:var(--accInk);font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center}
+.rc h2{font-size:18px;line-height:1.25;font-weight:700}
+.rc p{font-size:14.5px;line-height:1.5;margin-top:6px;color:var(--ink)}
+.rc .src{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:600;color:var(--teal);text-decoration:underline}
+.think{margin-top:22px;font-size:19px;line-height:1.4;font-weight:600}
+.think span{color:var(--acc)}
+.card{background:var(--card);color:var(--ink);border-radius:22px;padding:22px 16px;margin-top:20px}
+.card h2{font-size:22px;font-weight:800;padding:0 4px}
+.card p.s{font-size:14px;color:var(--mut);margin:4px 0 12px;line-height:1.45;padding:0 4px}
+.pad{padding:0 4px}
+label{display:block;font-size:14px;font-weight:600;margin:14px 0 5px}
+label i{font-weight:400;font-style:normal;color:var(--mut)}
+input[type=number],input[type=text],input[type=tel],input[type=email]{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--field);color:var(--ink)}
+input:focus{outline:3px solid #7fc4d6;border-color:var(--teal)}
+input[type=number]{-moz-appearance:textfield;appearance:textfield}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.money{position:relative}.money b{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--mut);font-weight:600}
+.money input{padding-left:30px;font-weight:700;font-size:17px}
+.sims{display:flex;gap:8px;flex-wrap:wrap}.sims button{font:inherit;font-weight:600;font-size:14px;padding:9px 14px;border-radius:30px;border:1.5px solid var(--line);background:var(--field);color:var(--ink);cursor:pointer}.sims button.on{background:var(--teal);border-color:var(--teal);color:#fff}
+.tot{margin-top:18px;padding:16px;border-radius:16px;background:var(--field);border:1.5px solid var(--line);font-size:15px;line-height:1.5}
+.tot b{font-size:22px;color:var(--teal)}
+.chk{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:14px;line-height:1.4}
+.chk input{width:20px;height:20px;margin-top:2px;accent-color:var(--teal);flex:none}
+.btn{display:block;width:100%;text-align:center;text-decoration:none;font:inherit;font-weight:700;font-size:17px;padding:15px;border-radius:40px;margin-top:16px;border:0;cursor:pointer}
+.wa{background:var(--acc);color:var(--accInk)}
+.em{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.note{font-size:12.5px;color:var(--mut);margin-top:12px;line-height:1.5;padding:0 4px}
+.imp{margin-top:20px;padding:18px 16px;border-radius:18px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.25);font-size:13px;line-height:1.55;color:#EAF5F8}
+.imp h3{font-size:15px;font-weight:700;margin-bottom:6px;color:#fff}.imp ul{padding-left:18px}.imp li{margin-top:5px}
+.srcs{margin-top:20px;font-size:12.5px;line-height:1.7;color:var(--soft)}
+.srcs a{color:#fff;font-weight:600}
+footer{margin-top:24px;font-size:12.5px;color:#B7D6E0;line-height:1.6;text-align:center}
+</style></head><body><div class="wrap">
+<span class="tag">Free bill check</span>
+<h1>Why are my bills going up?</h1>
+<p class="lead">If your bills keep creeping up, you are not imagining it. Here are five real reasons, with the sources, and a 2-minute check to see where you stand.</p>
+<p class="asof">Facts checked 20 October 2026.</p>
+
+<div class="reasons">
+<div class="rc"><div class="num">1</div><div><h2>The energy price cap rose again</h2><p>From 1 October 2026 the cap for a typical household went up 4% to £1,723 a year. Ofgem puts it down to pressure on oil and gas supplies because of the Middle East conflict.</p><a class="src" href="https://www.uswitch.com/gas-electricity/news/october-energy-price-cap-to-increase-by-four-percent/" target="_blank" rel="noopener">Source: Uswitch</a></div></div>
+<div class="rc"><div class="num">2</div><div><h2>Gas costs far more than last year, and another rise may follow</h2><p>Uswitch reports gas costs on the cap are almost 27% higher than the same period last year, and suppliers are already signalling another rise in January.</p><a class="src" href="https://www.uswitch.com/gas-electricity/news/october-energy-price-cap-to-increase-by-four-percent/" target="_blank" rel="noopener">Source: Uswitch</a></div></div>
+<div class="rc"><div class="num">3</div><div><h2>You pay standing charges before you use anything</h2><p>On the October cap, electricity has a standing charge of 54.83p a day and gas 29.68p a day. Over a year that adds up to roughly £200 and £108, even if you used nothing.</p><a class="src" href="https://www.uswitch.com/gas-electricity/news/october-energy-price-cap-to-increase-by-four-percent/" target="_blank" rel="noopener">Source: Uswitch (yearly totals are my sums)</a></div></div>
+<div class="rc"><div class="num">4</div><div><h2>Broadband and mobile prices rise every year</h2><p>Which? found the big broadband providers add a fixed £3 to £3.50 a month, and mobile networks £1 to £1.80, at the start of each year of your contract. MoneySavingExpert's 2026 research found almost every one of these pounds-and-pence rises was above inflation.</p><a class="src" href="https://www.which.co.uk/news/article/telecoms-price-rises-include-rip-off-contract-inflation-and-up-to-15-bill-hikes-aVuQM3F3ZFsn" target="_blank" rel="noopener">Source: Which?</a> &nbsp; <a class="src" href="https://www.moneysavingexpert.com/news/2026/06/mobile-broadband-price-hike-research/" target="_blank" rel="noopener">Source: MoneySavingExpert</a></div></div>
+<div class="rc"><div class="num">5</div><div><h2>Cheaper deals get hit hardest</h2><p>A flat rise is a bigger share of a small bill. MoneySavingExpert's example: a 3GB mobile deal signed at £10 a month in December 2024 is now £13.60, about 36% more.</p><a class="src" href="https://www.moneysavingexpert.com/news/2026/06/mobile-broadband-price-hike-research/" target="_blank" rel="noopener">Source: MoneySavingExpert</a></div></div>
+</div>
+
+<p class="think">Prices keep moving, so the only way to know is to <span>check what you pay today against a current quote.</span></p>
+
+<div class="card">
+<h2>Check yours in 2 minutes</h2>
+<p class="s">Type what you pay each month. Rough figures are fine. Leave blank anything you don't have.</p>
+<div class="pad">
+<label for="ge" style="margin-top:0">Gas and electric</label><div class="money"><b>£</b><input id="ge" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+<label for="bb">Broadband</label><div class="money"><b>£</b><input id="bb" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+<label>Mobile: how many SIMs?</label><div class="sims" id="simsel"></div>
+<div id="simfields"></div>
+</div>
+<div class="tot" id="tot">Enter your bills to see your yearly total.</div>
+</div>
+
+<div class="card">
+<h2>Get your free comparison</h2>
+<p class="s">Add a mobile number or email so I can send it back to you. Everything here is optional.</p>
+<div class="pad">
+<label for="nm" style="margin-top:0">Your name <i>(optional)</i></label><input id="nm" type="text" autocomplete="name">
+<label for="mb">Mobile number <i>(optional)</i></label><input id="mb" type="tel" autocomplete="tel">
+<label for="ea">Email <i>(optional)</i></label><input id="ea" type="email" autocomplete="email">
+<div class="chk"><input id="ok" type="checkbox"><label for="ok" style="margin:0;font-weight:400">I'm happy to be contacted about my free bill comparison.</label></div>
+</div>
+<a id="wa" class="btn wa" href="#" target="_blank" rel="noopener">Send my bills on WhatsApp</a>
+<a id="em" class="btn em" href="#">Send by email</a>
+<p class="note"><b>What happens next:</b> tap a button, then press send in WhatsApp or your email app. I will reply with your comparison and tell you which provider the quote is from before you decide anything. Nothing is sent until you press send, and nothing is stored on this page.</p>
+</div>
+
+<div class="imp"><h3>Important information</h3><ul>
+<li>This page is made independently by me. The figures above come from the sources linked and were checked on 20 October 2026. Prices change.</li>
+<li>Your total is an estimate from the numbers you type. Any quote I send will be confirmed at the time, and every home and customer is different.</li>
+<li>This is a guide to help you compare, not a guaranteed offer.</li>
+</ul></div>
+
+<div class="srcs">Sources: <a href="https://www.uswitch.com/gas-electricity/news/october-energy-price-cap-to-increase-by-four-percent/" target="_blank" rel="noopener">Uswitch, October 2026 price cap</a> · <a href="https://www.which.co.uk/news/article/telecoms-price-rises-include-rip-off-contract-inflation-and-up-to-15-bill-hikes-aVuQM3F3ZFsn" target="_blank" rel="noopener">Which?, telecoms price rises</a> · <a href="https://www.moneysavingexpert.com/news/2026/06/mobile-broadband-price-hike-research/" target="_blank" rel="noopener">MoneySavingExpert, mid-contract rises</a></div>
+
+<footer>Helping families in Birmingham and the Midlands</footer>
+</div>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var NUM='447713349650',MAIL='zdia786@yahoo.co.uk',nSim=1,simV=[];
+function num(x){x=parseFloat(x);return isFinite(x)&&x>0?x:0}
+function gbp(x){return '£'+(Math.round(x*100)/100).toLocaleString('en-GB',{minimumFractionDigits:Math.abs(x*100%100)>0.001?2:0,maximumFractionDigits:2})}
+function simTot(){var t=0;for(var i=0;i<nSim;i++)t+=num(simV[i]);return t}
+function total(){return num($('ge').value)+num($('bb').value)+simTot()}
+function body(){
+ var L=['Hello, I would like a free bill comparison.',''],g=num($('ge').value),b=num($('bb').value);
+ if(g)L.push('Gas and electric: '+gbp(g)+'/month');
+ if(b)L.push('Broadband: '+gbp(b)+'/month');
+ for(var i=0;i<nSim;i++)if(num(simV[i]))L.push((nSim>1?'SIM '+(i+1):'Mobile SIM')+': '+gbp(num(simV[i]))+'/month');
+ var t=total();if(t)L.push('Total: '+gbp(t)+'/month ('+gbp(t*12)+'/year)');
+ if($('nm').value.trim())L.push('','Name: '+$('nm').value.trim());
+ if($('mb').value.trim())L.push('Mobile: '+$('mb').value.trim());
+ if($('ea').value.trim())L.push('Email: '+$('ea').value.trim());
+ if($('ok').checked)L.push('','I am happy to be contacted about my bill comparison.');
+ return L.join('\n');
+}
+function upd(){
+ var t=total();
+ $('tot').innerHTML=t?'You pay about <b>'+gbp(t)+'</b> a month, which is <b>'+gbp(t*12)+'</b> a year. Is it still the best you can do?':'Enter your bills to see your yearly total.';
+ var b=body();
+ $('wa').href='https://wa.me/'+NUM+'?text='+encodeURIComponent(b);
+ $('em').href='mailto:'+MAIL+'?subject='+encodeURIComponent('Free bill comparison request')+'&body='+encodeURIComponent(b);
+}
+function renderSims(){
+ var sel=$('simsel'),f=$('simfields');sel.innerHTML='';f.innerHTML='';
+ [0,1,2,3,4,5].forEach(function(n){var b=document.createElement('button');b.type='button';b.textContent=n===0?'None':(n+(n>1?' SIMs':' SIM'));
+  if(n===nSim)b.className='on';b.onclick=function(){nSim=n;renderSims();upd()};sel.appendChild(b)});
+ for(var i=0;i<nSim;i++){(function(i){
+  var l=document.createElement('label'),m=document.createElement('div'),c=document.createElement('b'),e=document.createElement('input');
+  l.textContent=(nSim>1?'SIM '+(i+1):'Mobile SIM')+' (per month)';m.className='money';c.textContent='£';
+  e.type='number';e.inputMode='decimal';e.min='0';e.step='any';e.placeholder='0';e.value=simV[i]||'';e.id='sim'+i;l.htmlFor='sim'+i;
+  e.addEventListener('input',function(){simV[i]=e.value;upd()});
+  m.appendChild(c);m.appendChild(e);f.appendChild(l);f.appendChild(m)})(i)}
+}
+Array.prototype.forEach.call(document.querySelectorAll('input'),function(e){e.addEventListener('input',upd);e.addEventListener('change',upd)});
+renderSims();upd();
+})();
+</script></body></html>
